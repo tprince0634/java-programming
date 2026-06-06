@@ -1,52 +1,35 @@
 package Collection.Map.SortedHashMap;
 
 public class Documentation {
-    /**
-     *
-     * Constructor:
-     *
-     * TreeMap() — Creates an empty map with natural ordering of keys.
-     * TreeMap(Comparator<? super K> comparator) — Creates an empty map with the given comparator
-     * to order the keys.
-     *
-     *
-     * Important Properties:
-     *
-     * Ordering: The TreeMap ensures that its keys are sorted at all times. This makes it useful when you need a map with sorted keys.
-     * Red-Black Tree: Internally, TreeMap uses a Red-Black Tree to store its entries.
-     * This ensures that the map operations like get, put, remove run in O(log n) time.
-     *
-     * Null Keys/Values: Unlike HashMap, TreeMap does not allow null as a key. However, it allows null as a value.*/
 
 
+ /*
 
-    /**
-     *
-     * 1. SortedMap (Interface)
-     * A SortedMap is a type of Map that guarantees the keys will be ordered according to their
-     * natural ordering, or by a comparator provided at map creation time. It is a subinterface of Map
-     * It maintains the order of the keys, either in natural order (for comparable objects) or via a custom comparator.
-     *
-     * */
+     A Map in Java is a data structure that stores elements in key–value pairs, where each key
+     is unique and used to retrieve its corresponding value efficiently.
 
+     Building on this, the SortedMap interface extends Map and ensures that all keys are maintained
+     in sorted order, either by their natural ordering (ascending order) or by a custom comparator
+     provided at the time of creation.
 
-    /**
-     * 2. NavigableMap (Interface)
-     * A NavigableMap is an extension of the SortedMap interface,
-     * which adds navigation methods to allow more advanced operations on a sorted map.
-     It is part of the java.util package and represents maps where the keys are ordered.
-     Essentially, it provides additional functionality to efficiently navigate the keys
-     in both directions (ascending and descending).
-     */
+     The NavigableMap interface further extends SortedMap and adds advanced navigation capabilities.
+     In addition to maintaining sorted keys, it allows you to find the closest matching keys relative
+     to a given key, such as the greatest key less than a given value, the smallest key greater
+     than or equal to a value, and so on.
+     It provides navigation methods like floorKey and ceilingKey, making it useful when sorte
+     data and range-based operations are required.
 
-    /**
-     *
-     3. TreeMap (Class)
-     A TreeMap is an implementation of both NavigableMap and SortedMap interfaces.
-     It is part of Java’s java.util package and provides a map that is sorted according to the natural ordering of its keys,
-     or by a comparator provided when the map is created.
-     A TreeMap automatically maintains its keys in sorted order.
-     It is backed by a Red-Black Tree, which ensures that the map operations
-     (such as insertion, deletion, and lookup) are efficient with a time complexity of O(log n).
-     */
+     Finally, TreeMap is a concrete class that implements the NavigableMap interface
+     (and therefore also SortedMap and Map). It stores key–value pairs in a sorted order using
+     a self-balancing Red-Black Tree, which ensures that operations like insertion, deletion,
+     and lookup are performed efficiently in logarithmic time. TreeMap does not allow null keys
+     but allows null values, and it is not synchronized, meaning it is not thread-safe by default.
+     It provides navigation methods like floorKey and ceilingKey, making it useful when sorted data
+     and range-based operations are required.
+
+     Simple Understanding
+     SortedMap → gives sorting methods
+     NavigableMap → gives navigation methods
+     TreeMap → actually performs everything
+      */
 }

@@ -3,7 +3,6 @@ package Exception_Handling.EH1;
 public class Saurabh {
 
     // Method that throws ArithmeticException
-
     public static void show() throws ArithmeticException {
         System.out.println(40 / 0);    // This will throw an exception
     }

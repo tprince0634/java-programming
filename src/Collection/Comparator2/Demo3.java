@@ -7,9 +7,15 @@ import java.util.List;
 public class Demo3 implements Comparator<Integer> {
     @Override
     public int compare(Integer o1, Integer o2) {
-          return o1-o2;        //ascending
-//        return o2 - o1 ;  //descending
+        return Integer.compare(o1, o2);
     }
+
+    /*
+    If o2 > o1 → positive → o1 goes after
+    If o2 < o1 → negative → o1 comes before
+    */
+
+
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -18,12 +24,10 @@ public class Demo3 implements Comparator<Integer> {
         list.add(3);
         list.add(0);
 
-//      list.sort(null);                  //Use only of your class extend Comparator
-        list.sort(new Demo3());           //According to Compare method  @override
+        list.sort(new Demo3());           //According to Compare method
         System.out.println(list);
 
     }
-
 }
 
 

@@ -1,21 +1,17 @@
 package Collection.Map.LinkedHashMap;
-
-
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Set;
 
 
 public class AccesorderExample {
     public static void main(String[] args) {
+
         LinkedHashMap<Integer, String> dem = new LinkedHashMap<>(3, 0.5f, false);
         dem.put(4, "Dog");
         dem.put(1, "Apple");
         dem.put(2, "Boll");
         dem.put(3, "Cat");
 
-//IT Maintain THE ORDER (ON the based oN Insertion)
-//
         System.out.println(dem.entrySet());
 
         for (Map.Entry<Integer, String> entry : dem.entrySet()) {
@@ -24,6 +20,7 @@ public class AccesorderExample {
         System.out.println("TRUEEEEEE");
 
 //------------------------------------------------------------------------------------------------
+
         LinkedHashMap<Integer, String> map = new LinkedHashMap<>(16, 0.75f, true);
         map.put(1, "A");
         map.put(2, "B");

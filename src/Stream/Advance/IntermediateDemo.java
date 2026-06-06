@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class IntermediateDemo {
     public static void main(String[] args) {
 
-        //Filter
+//Filter
         List<String> students = Arrays.asList("Anchal", "Radha", "Saba", "Anushka");
         List<String> collect = students.stream()
                 .filter(x -> x.startsWith("An"))
@@ -50,7 +50,7 @@ public class IntermediateDemo {
         System.out.println(collect5);
 
 
-//   Limit
+//  Limit
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         List<Integer> limitedList = numbers.stream()
                 .limit(3)

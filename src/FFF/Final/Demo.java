@@ -6,7 +6,6 @@ import java.util.List;
 public class Demo {
     public static void main(String[] args) {
 
-
         final List<String> fruits = new ArrayList<>();
         fruits.add("Banana");
         fruits.add("Apple");

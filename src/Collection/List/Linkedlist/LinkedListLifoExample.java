@@ -1,6 +1,5 @@
 package Collection.List.Linkedlist;
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * 🔹 Does LinkedList implement Stack?

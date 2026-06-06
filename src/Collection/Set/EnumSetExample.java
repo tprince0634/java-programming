@@ -7,11 +7,7 @@ Iteration Order: Elements are maintained in their natural order (the order in wh
 Null Handling: EnumSet does not allow null elements.
 */
 
-import javax.swing.plaf.BorderUIResource;
-import java.util.Collection;
 import java.util.EnumSet;
-import java.util.Iterator;
-import java.util.Set;
 
 public class EnumSetExample {
     enum Day {

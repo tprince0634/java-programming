@@ -1,7 +1,5 @@
 package Collection.Set;
 
-import com.sun.source.tree.UsesTree;
-
 public class Documentation {
     //Set is also a collection which do not allow Duplicate
     //Similar To HashMap

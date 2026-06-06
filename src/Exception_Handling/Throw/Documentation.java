@@ -6,5 +6,7 @@ public class Documentation {
     /*You can throw both checked and unchecked exceptions using the throw keyword.*/
     /*It allows you to manually trigger an exception with a custom error message. */
 
+    /*If a checked exception is thrown using throw, it must be handled using try-catch
+    or declared using the throw keyword. */
 
 }

@@ -25,8 +25,6 @@ public class Demo {
 }
 
 
-
-
 /*✅ What Happens Here Step-by-Step:
 
 1. while (rs.next()):

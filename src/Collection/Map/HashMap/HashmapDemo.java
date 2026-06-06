@@ -4,7 +4,7 @@ import java.util.*;
 
 public class HashmapDemo {
     public static void main(String[] args) {
-        // Create HashMap
+
         HashMap<Integer, String> hasmap = new HashMap<>();
         hasmap.put(1, "Akshit");
         hasmap.put(2, "Babu");
@@ -15,7 +15,6 @@ public class HashmapDemo {
 //        hasmap.put(null, "Nitesh");     // Only one key can be null
 //        hasmap.put(null, "Aj style");   // Only one key can be null
 
-        // Print HashMap
         System.out.println(hasmap);
 
         // Retrieve value for key 3
@@ -57,6 +56,7 @@ public class HashmapDemo {
 
 
 //-----------------------------------------------------------------------------------------------------
+
         List<Integer> l1 = Arrays.asList(2,3,4,5,6);
         boolean contains = l1.contains(3);     //o(n)  because  Linear search krega
         System.out.println(contains);

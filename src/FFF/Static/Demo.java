@@ -1,10 +1,10 @@
 package FFF.Static;
 
 public class Demo {
-    //Initialization At declaration
+    //Initialization At declaration       //single line initializer
     static  int a  = 10 ;
 
-    //values can be changed
+    //values can be changed //static block (Multiline initiazier)
     static {
         a=11;
     }

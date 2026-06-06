@@ -1,13 +1,22 @@
+package ThisKeyword;
+
 public class Demo3 {
-    public void show() {
-        System.out.println(this); // prints the current object reference
+
+    // Method that receives a Demo3 object
+    public void show(Demo3 demo3) {
+        System.out.println("Received object: " + demo3);
+    }
+
+    // Method that passes current object
+    public void store() {
+        show(this);   // passing current object
     }
 
     public static void main(String[] args) {
         Demo3 demo3 = new Demo3(); // creates an object
-        System.out.println(demo3); // prints reference of demo3
-        demo3.show();              // inside show(), 'this' refers to demo3, so prints same reference
+        demo3.store();             // call store()
+        demo3.show(demo3);
     }
 }
 
-//This confirms that this == demo3 in this context.
+//The code proves  this keyword refers to the current object and can be passed as a parameter to another method.

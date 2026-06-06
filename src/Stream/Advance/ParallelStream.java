@@ -11,16 +11,27 @@ public class ParallelStream {
 
         // Generate a list of integers from 1 to 20,000
         long startime = System.currentTimeMillis();
-        List<Integer> ps = Stream.iterate(1, x -> x + 1).limit(20).toList();
-        List<Long> Factorial= ps.stream().map(ParallelStream::Factorial).toList();
+
+        List<Integer> ps = Stream.iterate(1, x -> x + 1)
+                .limit(20)
+                .toList();
+
+        List<Long> Factorial=
+                ps.stream()
+                        .map(ParallelStream::Factorial)
+                        .toList();
+
         //map(x-> Factorial(x))
+
         long endtime = System.currentTimeMillis();
 
         System.out.println("Time taken with Sequential Stream" +  " " + (endtime - startime) +" Ms");
 
 
         startime = System.currentTimeMillis();
-        Factorial= ps.parallelStream().map(ParallelStream::Factorial).toList();
+        Factorial= ps.parallelStream()
+                .map(ParallelStream::Factorial)
+                .toList();
         endtime = System.currentTimeMillis();
         System.out.println("Time taken with ParallelStream " +  " " + (endtime - startime) +" Ms");
 

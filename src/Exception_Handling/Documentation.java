@@ -1,26 +1,31 @@
 package Exception_Handling;
 
 public class Documentation {
-/** WHAT IS ERROR
+
+/** WHAT IS ERROR (unchecked)
  * A error refers to a serious problem that occurs during
- * the execution of a program and is typically not intended to be caught or handled by the application.
- * Errors indicate severe issues that usually prevent the program from continuing to run.*
+ * the execution of a program that indicates serious issues related to the JVM or system resources,
+ * and applications are not expected to catch or handle them.
  * */
 
     /**
      * WHAT IS EXCEPTION
      * An exception is an unwanted or unexpected event that occurs during the execution of a program,
-     * disrupting its normal flow.
+     * disrupting its normal flow
+     * It can be caught and handled using exception handling mechanisms like try, catch, finally, throw, and throws.
      * */
+
+
     /**
      * WHAT IS EXCEPTION HANDLING
      * ITS  is a process of Handling the exception that occurs in a runtime, in this we should have an alternate
      * source through which we can handle the exception.
      * */
     /**
+
      * Exception Hierarchy
      *
-     *           Throwable                     -->>The root class for all exceptions and errors
+     *           Throwable   -->>The root class for all exceptions and errors
      *           ├── Error         (Unchecked)
      *           │   ├── OutOfMemoryError      -->> Indicates that the JVM has run out of memory.
      *           │   ├── StackOverflowError    -->> Indicates that the stack has overflowed, usually due to excessive recursion.
@@ -32,7 +37,7 @@ public class Documentation {
      *               │   └── ClassNotFoundException
      *               ├── Unchecked Exceptions   -->> (RARELY OCCUR ) Unchecked exceptions are exceptions that are not checked at compile-time.
      *                 These exceptions extend the RuntimeException class, and the compiler does not require them to be caught or declared.
-     *
+
      *               │   ├── RuntimeException
      *               │   │   ├── NullPointerException               -->> Attempting to use an object reference that is null.
      *               │   │   ├── ArrayIndexOutOfBoundsException     -->> Accessing an array with an illegal index.

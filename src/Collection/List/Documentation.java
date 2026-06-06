@@ -2,7 +2,7 @@ package Collection.List;
 
 public class Documentation {
     /**
-     package Collection.List;
+     package Collection.List.List;
      public class Documentation {
 
      /** ArrayList

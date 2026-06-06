@@ -1,7 +1,5 @@
 package Collection.Queue;
 
-import Threading.Executor.P;
-
 import java.util.*;
 
 public class PriorityandRegularExample {

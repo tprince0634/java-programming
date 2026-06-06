@@ -3,17 +3,15 @@ import java.sql.*;
 
 //The below code show us how to fetch the data from database
 
-
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-
 
         String url = "jdbc:mysql://localhost:3306/pract";
         String username = "root";
         String password = "123456789";
 
-//The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-//        Class.forName("com.mysql.jdbc.Driver");
+//  The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+//  Class.forName("com.mysql.jdbc.Driver");
 
         System.out.println("Driver loaded successfully");
 

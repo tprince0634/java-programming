@@ -9,7 +9,6 @@ public class Counter {
         synchronized (this){
             count++;
         }
-
     }
 
     public int getCount() {

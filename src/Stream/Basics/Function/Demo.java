@@ -7,13 +7,17 @@ public class Demo {
     public static void main(String[] args) {
 
 
+      // Function is a predefined functional interface in Java that accepts one input and returns
+        // a result. Its abstract method is apply(). It is commonly used with Stream's map()
+        // operation to transform data from one form to another.
+
         Function<String,Integer> c = x -> x.length();
         System.out.println("The Third op is : " + c.apply("Apple"));
 
 
         Function<Integer,Integer> doubleit = x ->  x * 2;
         Function<Integer,Integer> tripleit =x ->  x * 3;
-//        System.out.println(doubleit.apply(100));
+//      System.out.println(doubleit.apply(100));
         System.out.println(doubleit.andThen(tripleit).apply(20));
         System.out.println(doubleit.compose(tripleit).apply(10));
 

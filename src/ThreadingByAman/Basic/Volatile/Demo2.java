@@ -1,9 +1,11 @@
 package ThreadingByAman.Basic.Volatile;
 
 public class Demo2 {
+
     private volatile   boolean running = true;
 
     public void show(){
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {

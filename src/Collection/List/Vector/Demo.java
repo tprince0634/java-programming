@@ -14,12 +14,13 @@ public class Demo {
         vec1.add(1);
         vec1.add(1);
         vec1.add(0,3);
-//Correct! The value 3 will not override the existing 1 at index 0. Instead, it will insert the value 3 at the beginning of the vector, shifting the other elements to the right.
+//Correct! The value 3 will not override the existing 1 at index 0. Instead,
+// it will insert the value 3 at the beginning of the vector, shifting the other elements to the right.
         System.out.println(vec1);
         System.out.println("Capacity After  increment by 3 and initial set to 1 :  " + " " + vec1.capacity());
 
 
-        // Create a Collection.List.Vector
+        // Create a Collection.List.List.Vector
         Vector<String> vector = new Vector<>();
 
         // Adding elements
@@ -41,13 +42,13 @@ public class Demo {
  * */
 
 
-        // Iterating through the Collection.List.Vector
+        // Iterating through the Collection.List.List.Vector
         for (String fruit : vector) {
             System.out.println(fruit);
         }
 
         // Size and capacity
-        System.out.println("Size: " + vector.size()); // Output: 2
+        System.out.println("Size: " + vector.size()); // Output: 3
         System.out.println("Capacity: " + vector.capacity()); // Output: 10 (default capacity)
 
         LinkedList<Integer>linkedList=new LinkedList<>();

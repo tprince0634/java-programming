@@ -1,15 +1,12 @@
 package Collection.List.Vector;
-
-
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Vector;
+
 
 public class Demo2 {
     public static void main(String[] args) {
 
-//        Vector<Integer> Jak = new Vector<>();
-        ArrayList<Integer> Jak = new ArrayList<>();
+        Vector<Integer> Jak = new Vector<>();
+//       ArrayList<Integer> Jak = new ArrayList<>();
 
 
         // First thread
@@ -37,6 +34,8 @@ public class Demo2 {
         thread1.start();
         thread2.start();
 
+        // Main thread waits until: thread1 finishes thread2 finishes
+
        try{
            thread1.join();
            thread2.join();
@@ -46,7 +45,6 @@ public class Demo2 {
 
         // Print the size of the list to verify
         System.out.println("Size of the list: " + Jak.size());
-
 
 
     }

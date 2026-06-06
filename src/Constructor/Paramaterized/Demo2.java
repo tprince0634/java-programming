@@ -1,7 +1,5 @@
 package Constructor.Paramaterized;
 
-import Opps.INHERITANCE.DaimondSolution.Demo;
-
 //Multiple parameterized Constructor
 public class Demo2 {
     int id;

@@ -5,6 +5,7 @@ package Lambda2.Basics;
  }
 */
 
+
 @FunctionalInterface
 interface A {
     void show();

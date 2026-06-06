@@ -9,21 +9,26 @@ public class Demo2 implements Comparator<String> {
 
     @Override
     public int compare(String o1, String o2) {
-//      return o2.compareTo(o1) ;   //Ascending
-        return o1.compareTo(o2) ;   //Descending
+      return o2.length()-o1.length();
     }
 
     public static void main(String[] args) {
+
         List<String> list = new ArrayList<>();
-        list.add("Aman");
-        list.add("Sakil");
+        list.add("Ama");
+        list.add("Sail");
         list.add("Manoj");
 
-//      list.sort(null);                                      // the natural order is lexicographical order (i.e., alphabetical order)
-        list.sort(new Demo2());                            //If this will uncomment than Compare () will run
+        list.sort(new Demo2());
         System.out.println(list);
     }
-
-
 }
+
+
+/*
+This program demonstrates how to create a custom Comparator by implementing the Comparator interface
+to control sorting logic.
+Sorts the strings based on their length in descending order (long → short).
+*/
+
 

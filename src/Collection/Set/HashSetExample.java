@@ -1,7 +1,6 @@
 package Collection.Set;
 
 import java.util.HashSet;
-import java.util.Set;
 
 
 /*1. HashSet

@@ -11,7 +11,7 @@ public class New {
     public void setAge() {
         int age = -1;           // Initialize age to an invalid value
 
-        while (age < 0) {       // Continue prompting until a valid age is entered
+        while (age < 0) {         // Continue prompting until a valid age is entered
 
             System.out.print("ENTER YOUR AGE: ");
             try {

@@ -7,10 +7,14 @@ import java.util.Optional;
 
 public class Demo4 {
     public static void main(String[] args) {
+
         List<Integer> list = Arrays.asList(1,2,8,7,4,5);
-        Optional<Integer> max = list.stream().max(Comparator.naturalOrder());
+        Optional<Integer> max =
+                list.stream().max(Comparator.naturalOrder());
         System.out.println(max.get());
-        Optional<Integer> min = list.stream().min(Comparator.naturalOrder());
+
+        Optional<Integer> min =
+                list.stream().min(Comparator.naturalOrder());
         System.out.println(min.get());
 
 
@@ -22,12 +26,12 @@ public class Demo4 {
 
 
         List<Integer> list2 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        // Accumulating sum of the numbers using reduce with parallel stream
+        // Accumulating a sum of the numbers using reduce with parallel stream
         int sum = list2.parallelStream()
                 .reduce(0,Integer::sum);
         System.out.println("Sum" + sum );
 
-           //     .reduce(0,(x,y)-> (x+y)); // This safely adds up elements
+           //  .reduce(0,(x,y)-> (x+y)); // This safely adds up elements
 
 
     }

@@ -21,6 +21,7 @@ public class Demo {
                 return "Odd";
             }
         };
+
             System.out.println(iseven.apply(2));
     }
 }

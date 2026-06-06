@@ -26,7 +26,7 @@ public class Documentation {
     /**
      * Types of Streams in Java:
      * Sequential Streams:
-     *By default, streams are sequential, which means elements are processed in a single-threaded manner (one at a time).
+     * By default, streams are sequential, which means elements are processed in a single-threaded manner (one at a time).
 
      * Parallel Streams:
      * A parallel stream processes elements in parallel, which can improve performance for large datasets

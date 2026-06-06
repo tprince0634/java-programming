@@ -1,6 +1,7 @@
 package Collection.Comparable2;
 
 public class Document {
+
 /*Comparable:
 The Comparable interface is used to define the natural ordering of objects.
 A class that implements Comparable must override the compareTo method.

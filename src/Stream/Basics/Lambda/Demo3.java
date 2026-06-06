@@ -3,8 +3,6 @@ package Stream.Basics.Lambda;
 public class Demo3 {
     public static void main(String[] args) {
 
-
-
 //Anonymous Thread
         Thread t1 = new Thread(new Runnable() {
             @Override

@@ -7,15 +7,15 @@ import java.util.TreeMap;
 public class Demo3 {
     public static void main(String[] args) {
         // SortedMap with a comparator that sorts keys in descending order (reverse order)
-        SortedMap<Integer, String> bb = new TreeMap<>((a, b) -> b - a);
+        SortedMap<Integer, String> map = new TreeMap<>((a, b) -> b - a);
 
         // Adding key-value pairs
-        bb.put(1, "a");
-        bb.put(3, "c");
-        bb.put(2, "d");
-        bb.put(26, "z");
+        map.put(1, "a");
+        map.put(3, "c");
+        map.put(2, "d");
+        map.put(26, "z");
 
         // Output the map, which will be sorted in reverse order based on the keys
-        System.out.println(bb);  // it maintains the reverse order on the key
+        System.out.println(map);  // it maintains the reverse order on the key
     }
 }

@@ -2,7 +2,6 @@ package Collection.Map.WeakHashMap;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.WeakHashMap;
 
 public class StrongReferenceExample {
     public static void main(String[] args) {

@@ -28,6 +28,7 @@ public class Demo {
          running=false;          //by main thread
 
 }
+
     public static void main(String[] args) throws InterruptedException {
        Demo demo = new Demo();
        demo.show();

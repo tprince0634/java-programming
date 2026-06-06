@@ -1,12 +1,9 @@
 package Stream.Advance;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
-
 
 //How it is useful and reducing the Extra work , what are the basic Benefits of streams
 

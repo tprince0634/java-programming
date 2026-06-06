@@ -3,8 +3,6 @@ package Collection.Map.WeakHashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import java.lang.ref.WeakReference;
-
 public class WeakReferenceExample {
         public static void main(String[] args) {
 

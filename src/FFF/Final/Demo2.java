@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Demo2 {
     public static void main(String[] args) {
+
         final int number = 10;
 //       number = 20;     ❌ Not allowed - value cannot be changed.
 

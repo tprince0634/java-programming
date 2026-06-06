@@ -1,12 +1,11 @@
 package Collection.Map.HashTable;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 
 public class Demo {
     public static void main(String[] args) {
 
-//        Hashtable<Integer,String> leo = new Hashtable<>();   //synchronized
+//      Hashtable<Integer,String> leo = new Hashtable<>();   //synchronized
         HashMap<Integer,String> leo = new HashMap<>();   //Not synchronized
 
         //Lambda expression Thread

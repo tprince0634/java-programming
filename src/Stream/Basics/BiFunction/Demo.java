@@ -5,12 +5,12 @@ import java.util.function.*;
 public class Demo {
     public static void main(String[] args) {
         /***
-         * 🔹 What is a Bi-function?
+         * 🔹 What is a Bi function?
          * Bi- means two inputs.
-         * Java provides several Bi- functional interfaces to work with two input arguments.
+         * Java provides several Bifunctional interfaces to work with two input arguments.
          */
 
-        BiPredicate<Integer,Integer> istwoeven = (x,y)->(x+y) % 2 == 0;
+        BiPredicate<Integer,Integer> istwoeven = (x,y)-> (x+y) % 2 == 0;
         System.out.println(istwoeven.test(4,6));
 
         BiFunction<String,String,Integer> length = (x,y) -> (x+y).length();

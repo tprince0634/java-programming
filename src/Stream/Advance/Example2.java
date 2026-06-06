@@ -9,10 +9,11 @@ import java.util.stream.Stream;
 
 public class Example2 {
     public static void main(String[] args) {
+
         List<String> l1 = Arrays.asList("Alice","Bob","Alexander","Thomoas");
         System.out.println( l1.stream().collect(Collectors.groupingBy(x-> x.length())));
 
-//        2) Counting word Occurence
+//       2) Counting word Occurence
         String sentence = "Hello world NEW london Hello from Dubai";
         System.out.println( Arrays.stream(sentence.split(" ")).collect(Collectors.groupingBy(x-> x,Collectors.counting())));
 

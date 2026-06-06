@@ -1,26 +1,24 @@
 package Stream.Basics.Lambda;//package Stream.Basics.Lambda;
-//
-///**
-// *
-// * what is lambda function in java
-// * A lambda function (or lambda expression) in Java is a short block of code that can take
-// in parameters and return a result. It is used primarily to define the implementation of a
-// functional interface (an interface with just one abstract method) in a more compact and
-// readable way
-// .*/
+
+/**
+ * what is lambda function in java
+ * A lambda function (or lambda expression) in Java is a short block of code that can take
+ in parameters and return a result. It is used primarily to define the implementation of a
+ functional interface (an interface with just one abstract method) in a more compact and
+ readable way
+ .*/
 
 @FunctionalInterface
 interface Mathoperation{
     int operate(int a , int b);
 }
 
-
 public class Demo1 implements Mathoperation{
 //lambda
 
     Mathoperation Multiply = (a , b) -> a * b ;
 
-    Mathoperation add =(int a , int b) -> {
+    Mathoperation add = (int a , int b) -> {
         return a+b;
     };
 

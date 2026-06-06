@@ -4,7 +4,7 @@ public class Document {
 
     /*🔥 The Queue is an interface in Java.
 
-   In Java, a Queue is an interface that represents a First-In-First-Out (FIFO) data structure.
+In Java, a Queue is an interface that represents a First-In-First-Out (FIFO) data structure.
 Elements are added at the end (rear)
 Elements are removed from the front (head)
 
